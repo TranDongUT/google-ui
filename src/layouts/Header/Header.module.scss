@@ -1,0 +1,36 @@
+.wrapper {
+  height: var(--header-height);
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link-action {
+  padding-right: 15px;
+}
+
+.more-action {
+  width: 96px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.more-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+  }
+}
+
+.avata {
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+}

@@ -1,0 +1,14 @@
+.wrapper {
+  cursor: pointer;
+
+  + .wrapper {
+    margin-left: 8px;
+  }
+}
+
+//type
+.href {
+  &:hover {
+    text-decoration: underline;
+  }
+}
