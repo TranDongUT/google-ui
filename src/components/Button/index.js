@@ -4,10 +4,25 @@ import { Link } from "react-router-dom";
 
 const cx = classNames.bind(style);
 
-function Button({ to = false, href = false, icon, children, ...props }) {
+function Button({
+  //type
+  to = false,
+  href = false,
+  //size
+  primary,
+  circle,
+  ///other
+  className,
+  icon,
+  children,
+  ...props
+}) {
   const classes = cx("wrapper", {
+    [className]: className,
     to,
     href,
+    primary,
+    circle,
     ...props,
   });
 
@@ -22,6 +37,7 @@ function Button({ to = false, href = false, icon, children, ...props }) {
 
   return (
     <Comp className={classes} {...props}>
+      {icon && <span className={cx("icon")}>{icon}</span>}
       {children}
     </Comp>
   );
